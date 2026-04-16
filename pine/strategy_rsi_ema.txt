@@ -1,0 +1,56 @@
+//@version=6
+strategy("RSI EMA Crossover Strategy", overlay=true, initial_capital=10000, default_qty_type=strategy.percent_of_equity, default_qty_value=10, commission_type=strategy.commission.percent, commission_value=0.05, pyramiding=0, process_orders_on_close=true)
+
+// === Inputs ===
+fastEmaLen = input.int(9, "Fast EMA Length")
+slowEmaLen = input.int(21, "Slow EMA Length")
+rsiLen     = input.int(14, "RSI Length")
+rsiOB      = input.int(70, "RSI Overbought")
+rsiOS      = input.int(30, "RSI Oversold")
+
+// === Indicators ===
+fastEma = ta.ema(close, fastEmaLen)
+slowEma = ta.ema(close, slowEmaLen)
+rsiVal  = ta.rsi(close, rsiLen)
+
+// === Conditions ===
+bullCross = ta.crossover(fastEma, slowEma)
+bearCross = ta.crossunder(fastEma, slowEma)
+
+longCond  = bullCross and rsiVal > rsiOS and rsiVal < rsiOB
+shortCond = bearCross and rsiVal > rsiOS and rsiVal < rsiOB
+
+// === Strategy Orders ===
+if longCond
+    strategy.entry("Long", strategy.long)
+if shortCond
+    strategy.entry("Short", strategy.short)
+
+// Close when opposite signal appears
+if strategy.position_size > 0 and shortCond
+    strategy.close("Long")
+if strategy.position_size < 0 and longCond
+    strategy.close("Short")
+
+// === Plotting ===
+plot(fastEma, color=color.new(color.green, 0), title="Fast EMA")
+plot(slowEma, color=color.new(color.orange, 0), title="Slow EMA")
+
+plotshape(longCond,  title="Buy Signal",  style=shape.triangleup,   location=location.belowbar, color=color.new(color.lime, 0), size=size.small, text="BUY")
+plotshape(shortCond, title="Sell Signal", style=shape.triangledown, location=location.abovebar, color=color.new(color.red, 0),  size=size.small, text="SELL")
+
+// === Alert Messages ===
+// IMPORTANT: In the TradingView alert dialog, replace ALERT_AUTH_TOKEN
+// with the same value you used for ALERT_AUTH_TOKEN in your .env file.
+alertMessageBuy  = '{"signal":"buy","symbol":"{{ticker}}","exchange":"{{exchange}}","time":"{{time}}","auth_token":"ALERT_AUTH_TOKEN"}'
+alertMessageSell = '{"signal":"sell","symbol":"{{ticker}}","exchange":"{{exchange}}","time":"{{time}}","auth_token":"ALERT_AUTH_TOKEN"}'
+
+// Alert conditions (for premium accounts with webhook support)
+alertcondition(longCond,  title="Buy Alert",  message=alertMessageBuy)
+alertcondition(shortCond, title="Sell Alert", message=alertMessageSell)
+
+// Strategy-based alerts (works on FREE accounts - use "Any alert() function call" condition)
+if longCond
+    alert(alertMessageBuy, alert.freq_once_per_bar)
+if shortCond
+    alert(alertMessageSell, alert.freq_once_per_bar)

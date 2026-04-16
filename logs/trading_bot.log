@@ -1,0 +1,438 @@
+2025-12-07 19:19:45,613 [INFO] trading_bot_flask: ============================================================
+2025-12-07 19:19:45,614 [INFO] trading_bot_flask: 🚀 Starting Trading Bot Webhook Server
+2025-12-07 19:19:45,614 [INFO] trading_bot_flask: ============================================================
+2025-12-07 19:19:45,614 [INFO] trading_bot_flask: 📡 Server: http://127.0.0.1:8001
+2025-12-07 19:19:45,615 [INFO] trading_bot_flask: 🔗 Webhook: http://127.0.0.1:8001/webhook
+2025-12-07 19:19:45,615 [INFO] trading_bot_flask: 📊 Metrics: http://127.0.0.1:8001/metrics
+2025-12-07 19:19:45,615 [INFO] trading_bot_flask: 📈 Stats: http://127.0.0.1:8001/stats
+2025-12-07 19:19:45,615 [INFO] trading_bot_flask: ============================================================
+2025-12-07 19:19:45,628 [INFO] trading_bot_flask: 
+
+╔══════════════════════════════════════════════════════════╗
+║              TRADING BOT PERFORMANCE METRICS             ║
+╠══════════════════════════════════════════════════════════╣
+║ Total Trades:             6                              ║
+║ Successful:               2                              ║
+║ Failed:                   4                              ║
+║ Success Rate:         33.3%                            ║
+╠══════════════════════════════════════════════════════════╣
+║ Buy Orders:               1                              ║
+║ Sell Orders:              1                              ║
+║ Total Volume:        0.00200000 BTC                      ║
+╚══════════════════════════════════════════════════════════╝
+
+2025-12-07 19:19:45,895 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8001
+2025-12-07 19:19:45,895 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2025-12-07 19:19:45,898 [INFO] werkzeug:  * Restarting with stat
+2025-12-07 19:19:47,406 [INFO] trading_bot_flask: ============================================================
+2025-12-07 19:19:47,406 [INFO] trading_bot_flask: 🚀 Starting Trading Bot Webhook Server
+2025-12-07 19:19:47,407 [INFO] trading_bot_flask: ============================================================
+2025-12-07 19:19:47,407 [INFO] trading_bot_flask: 📡 Server: http://127.0.0.1:8001
+2025-12-07 19:19:47,407 [INFO] trading_bot_flask: 🔗 Webhook: http://127.0.0.1:8001/webhook
+2025-12-07 19:19:47,408 [INFO] trading_bot_flask: 📊 Metrics: http://127.0.0.1:8001/metrics
+2025-12-07 19:19:47,408 [INFO] trading_bot_flask: 📈 Stats: http://127.0.0.1:8001/stats
+2025-12-07 19:19:47,408 [INFO] trading_bot_flask: ============================================================
+2025-12-07 19:19:47,409 [INFO] trading_bot_flask: 
+
+╔══════════════════════════════════════════════════════════╗
+║              TRADING BOT PERFORMANCE METRICS             ║
+╠══════════════════════════════════════════════════════════╣
+║ Total Trades:             6                              ║
+║ Successful:               2                              ║
+║ Failed:                   4                              ║
+║ Success Rate:         33.3%                            ║
+╠══════════════════════════════════════════════════════════╣
+║ Buy Orders:               1                              ║
+║ Sell Orders:              1                              ║
+║ Total Volume:        0.00200000 BTC                      ║
+╚══════════════════════════════════════════════════════════╝
+
+2025-12-07 19:19:47,456 [WARNING] werkzeug:  * Debugger is active!
+2025-12-07 19:19:47,466 [INFO] werkzeug:  * Debugger PIN: 373-469-883
+2025-12-07 19:20:04,686 [INFO] trading_bot_flask: ============================================================
+2025-12-07 19:20:04,687 [INFO] trading_bot_flask: 📥 WEBHOOK RECEIVED from 127.0.0.1
+2025-12-07 19:20:04,687 [INFO] trading_bot_flask: 📦 Payload: {'signal': 'buy', 'symbol': 'BTCUSDT', 'exchange': 'BINANCE', 'time': '2025-12-04 12:00:00', 'auth_token': 'super_secret_alert_token'}
+2025-12-07 19:20:04,687 [INFO] trading_bot_flask: 📊 Processing BUY order: 0.001 BTCUSDT
+2025-12-07 19:20:05,970 [INFO] app.exchange.binance_client: Synced time offset: 645 ms (server ahead by 645 ms)
+2025-12-07 19:20:05,971 [INFO] trading_bot_flask: ✅ Binance client initialized
+2025-12-07 19:20:05,972 [INFO] app.exchange.binance_client: 📤 Placing BUY market order: 0.001 BTCUSDT
+2025-12-07 19:20:06,205 [INFO] app.exchange.binance_client: Synced time offset: 642 ms (server ahead by 642 ms)
+2025-12-07 19:20:06,432 [INFO] app.exchange.binance_client: ✅ Order executed successfully in 0.227 seconds
+2025-12-07 19:20:06,433 [INFO] trading_bot_flask: ✅ ORDER EXECUTED successfully!
+2025-12-07 19:20:06,434 [INFO] trading_bot_flask:    Order ID: 8011069
+2025-12-07 19:20:06,435 [INFO] trading_bot_flask:    Side: BUY
+2025-12-07 19:20:06,436 [INFO] trading_bot_flask:    Symbol: BTCUSDT
+2025-12-07 19:20:06,437 [INFO] trading_bot_flask:    Executed Qty: 0.001
+2025-12-07 19:20:06,438 [INFO] trading_bot_flask:    Avg Price: $88779.96
+2025-12-07 19:20:06,439 [INFO] trading_bot_flask:    Execution Time: 0.461 seconds
+2025-12-07 19:20:06,442 [INFO] trading_bot_flask: 💾 Trade recorded in logs/trades.csv (Total processing: 1.755 seconds)
+2025-12-07 19:20:06,443 [INFO] trading_bot_flask: ============================================================
+2025-12-07 19:20:06,452 [INFO] werkzeug: 127.0.0.1 - - [07/Dec/2025 19:20:06] "POST /webhook HTTP/1.1" 200 -
+2025-12-07 19:20:06,463 [INFO] trading_bot_flask: ============================================================
+2025-12-07 19:20:06,463 [INFO] trading_bot_flask: 📥 WEBHOOK RECEIVED from 127.0.0.1
+2025-12-07 19:20:06,464 [INFO] trading_bot_flask: 📦 Payload: {'signal': 'sell', 'symbol': 'BTCUSDT', 'exchange': 'BINANCE', 'time': '2025-12-04 12:00:00', 'auth_token': 'super_secret_alert_token'}
+2025-12-07 19:20:06,464 [INFO] trading_bot_flask: 📊 Processing SELL order: 0.001 BTCUSDT
+2025-12-07 19:20:07,510 [INFO] app.exchange.binance_client: Synced time offset: 647 ms (server ahead by 647 ms)
+2025-12-07 19:20:07,512 [INFO] trading_bot_flask: ✅ Binance client initialized
+2025-12-07 19:20:07,513 [INFO] app.exchange.binance_client: 📤 Placing SELL market order: 0.001 BTCUSDT
+2025-12-07 19:20:07,751 [INFO] app.exchange.binance_client: Synced time offset: 648 ms (server ahead by 648 ms)
+2025-12-07 19:20:07,988 [INFO] app.exchange.binance_client: ✅ Order executed successfully in 0.235 seconds
+2025-12-07 19:20:07,989 [INFO] trading_bot_flask: ✅ ORDER EXECUTED successfully!
+2025-12-07 19:20:07,990 [INFO] trading_bot_flask:    Order ID: 8011070
+2025-12-07 19:20:07,991 [INFO] trading_bot_flask:    Side: SELL
+2025-12-07 19:20:07,992 [INFO] trading_bot_flask:    Symbol: BTCUSDT
+2025-12-07 19:20:07,993 [INFO] trading_bot_flask:    Executed Qty: 0.001
+2025-12-07 19:20:07,994 [INFO] trading_bot_flask:    Avg Price: $88779.95
+2025-12-07 19:20:07,995 [INFO] trading_bot_flask:    Execution Time: 0.476 seconds
+2025-12-07 19:20:07,997 [INFO] trading_bot_flask: 💾 Trade recorded in logs/trades.csv (Total processing: 1.534 seconds)
+2025-12-07 19:20:07,999 [INFO] trading_bot_flask: ============================================================
+2025-12-07 19:20:08,005 [INFO] werkzeug: 127.0.0.1 - - [07/Dec/2025 19:20:08] "POST /webhook HTTP/1.1" 200 -
+2025-12-07 19:24:43,568 [INFO] trading_bot_flask: ============================================================
+2025-12-07 19:24:43,568 [INFO] trading_bot_flask: 🚀 Starting Trading Bot Webhook Server
+2025-12-07 19:24:43,569 [INFO] trading_bot_flask: ============================================================
+2025-12-07 19:24:43,569 [INFO] trading_bot_flask: 📡 Server: http://127.0.0.1:8001
+2025-12-07 19:24:43,569 [INFO] trading_bot_flask: 🔗 Webhook: http://127.0.0.1:8001/webhook
+2025-12-07 19:24:43,569 [INFO] trading_bot_flask: 📊 Metrics: http://127.0.0.1:8001/metrics
+2025-12-07 19:24:43,570 [INFO] trading_bot_flask: 📈 Stats: http://127.0.0.1:8001/stats
+2025-12-07 19:24:43,570 [INFO] trading_bot_flask: ============================================================
+2025-12-07 19:24:43,582 [INFO] trading_bot_flask: 
+
+╔══════════════════════════════════════════════════════════╗
+║              TRADING BOT PERFORMANCE METRICS             ║
+╠══════════════════════════════════════════════════════════╣
+║ Total Trades:             8                              ║
+║ Successful:               4                              ║
+║ Failed:                   4                              ║
+║ Success Rate:         50.0%                            ║
+╠══════════════════════════════════════════════════════════╣
+║ Buy Orders:               2                              ║
+║ Sell Orders:              2                              ║
+║ Total Volume:        0.00400000 BTC                      ║
+╚══════════════════════════════════════════════════════════╝
+
+2025-12-07 19:24:43,649 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8001
+2025-12-07 19:24:43,649 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2025-12-07 19:24:43,653 [INFO] werkzeug:  * Restarting with stat
+2025-12-07 19:24:44,828 [INFO] trading_bot_flask: ============================================================
+2025-12-07 19:24:44,829 [INFO] trading_bot_flask: 🚀 Starting Trading Bot Webhook Server
+2025-12-07 19:24:44,829 [INFO] trading_bot_flask: ============================================================
+2025-12-07 19:24:44,829 [INFO] trading_bot_flask: 📡 Server: http://127.0.0.1:8001
+2025-12-07 19:24:44,829 [INFO] trading_bot_flask: 🔗 Webhook: http://127.0.0.1:8001/webhook
+2025-12-07 19:24:44,830 [INFO] trading_bot_flask: 📊 Metrics: http://127.0.0.1:8001/metrics
+2025-12-07 19:24:44,830 [INFO] trading_bot_flask: 📈 Stats: http://127.0.0.1:8001/stats
+2025-12-07 19:24:44,830 [INFO] trading_bot_flask: ============================================================
+2025-12-07 19:24:44,831 [INFO] trading_bot_flask: 
+
+╔══════════════════════════════════════════════════════════╗
+║              TRADING BOT PERFORMANCE METRICS             ║
+╠══════════════════════════════════════════════════════════╣
+║ Total Trades:             8                              ║
+║ Successful:               4                              ║
+║ Failed:                   4                              ║
+║ Success Rate:         50.0%                            ║
+╠══════════════════════════════════════════════════════════╣
+║ Buy Orders:               2                              ║
+║ Sell Orders:              2                              ║
+║ Total Volume:        0.00400000 BTC                      ║
+╚══════════════════════════════════════════════════════════╝
+
+2025-12-07 19:24:44,893 [WARNING] werkzeug:  * Debugger is active!
+2025-12-07 19:24:44,906 [INFO] werkzeug:  * Debugger PIN: 373-469-883
+2025-12-07 19:25:04,291 [INFO] trading_bot_flask: ============================================================
+2025-12-07 19:25:04,291 [INFO] trading_bot_flask: 📥 WEBHOOK RECEIVED from 127.0.0.1
+2025-12-07 19:25:04,291 [INFO] trading_bot_flask: 📦 Payload: {'signal': 'buy', 'symbol': 'BTCUSDT', 'exchange': 'BINANCE', 'time': '2025-12-04 12:00:00', 'auth_token': 'super_secret_alert_token'}
+2025-12-07 19:25:04,292 [INFO] trading_bot_flask: 📊 Processing BUY order: 0.001 BTCUSDT
+2025-12-07 19:25:05,376 [INFO] app.exchange.binance_client: Synced time offset: 652 ms (server ahead by 652 ms)
+2025-12-07 19:25:05,378 [INFO] trading_bot_flask: ✅ Binance client initialized
+2025-12-07 19:25:05,379 [INFO] app.exchange.binance_client: 📤 Placing BUY market order: 0.001 BTCUSDT
+2025-12-07 19:25:05,620 [INFO] app.exchange.binance_client: Synced time offset: 647 ms (server ahead by 647 ms)
+2025-12-07 19:25:06,185 [INFO] app.exchange.binance_client: ✅ Order executed successfully in 0.564 seconds
+2025-12-07 19:25:06,187 [INFO] trading_bot_flask: ✅ ORDER EXECUTED successfully!
+2025-12-07 19:25:06,188 [INFO] trading_bot_flask:    Order ID: 8013675
+2025-12-07 19:25:06,189 [INFO] trading_bot_flask:    Side: BUY
+2025-12-07 19:25:06,190 [INFO] trading_bot_flask:    Symbol: BTCUSDT
+2025-12-07 19:25:06,192 [INFO] trading_bot_flask:    Executed Qty: 0.001
+2025-12-07 19:25:06,193 [INFO] trading_bot_flask:    Avg Price: $88290.81
+2025-12-07 19:25:06,194 [INFO] trading_bot_flask:    Execution Time: 0.808 seconds
+2025-12-07 19:25:06,197 [INFO] trading_bot_flask: 💾 Trade recorded in logs/trades.csv (Total processing: 1.906 seconds)
+2025-12-07 19:25:06,199 [INFO] trading_bot_flask: ============================================================
+2025-12-07 19:25:06,206 [INFO] werkzeug: 127.0.0.1 - - [07/Dec/2025 19:25:06] "POST /webhook HTTP/1.1" 200 -
+2025-12-07 19:25:06,219 [INFO] trading_bot_flask: ============================================================
+2025-12-07 19:25:06,220 [INFO] trading_bot_flask: 📥 WEBHOOK RECEIVED from 127.0.0.1
+2025-12-07 19:25:06,220 [INFO] trading_bot_flask: 📦 Payload: {'signal': 'sell', 'symbol': 'BTCUSDT', 'exchange': 'BINANCE', 'time': '2025-12-04 12:00:00', 'auth_token': 'super_secret_alert_token'}
+2025-12-07 19:25:06,221 [INFO] trading_bot_flask: 📊 Processing SELL order: 0.001 BTCUSDT
+2025-12-07 19:25:07,236 [INFO] app.exchange.binance_client: Synced time offset: 620 ms (server ahead by 620 ms)
+2025-12-07 19:25:07,237 [INFO] trading_bot_flask: ✅ Binance client initialized
+2025-12-07 19:25:07,237 [INFO] app.exchange.binance_client: 📤 Placing SELL market order: 0.001 BTCUSDT
+2025-12-07 19:25:07,469 [INFO] app.exchange.binance_client: Synced time offset: 649 ms (server ahead by 649 ms)
+2025-12-07 19:25:07,703 [INFO] app.exchange.binance_client: ✅ Order executed successfully in 0.232 seconds
+2025-12-07 19:25:07,704 [INFO] trading_bot_flask: ✅ ORDER EXECUTED successfully!
+2025-12-07 19:25:07,705 [INFO] trading_bot_flask:    Order ID: 8013686
+2025-12-07 19:25:07,705 [INFO] trading_bot_flask:    Side: SELL
+2025-12-07 19:25:07,706 [INFO] trading_bot_flask:    Symbol: BTCUSDT
+2025-12-07 19:25:07,707 [INFO] trading_bot_flask:    Executed Qty: 0.001
+2025-12-07 19:25:07,708 [INFO] trading_bot_flask:    Avg Price: $88290.80
+2025-12-07 19:25:07,708 [INFO] trading_bot_flask:    Execution Time: 0.467 seconds
+2025-12-07 19:25:07,710 [INFO] trading_bot_flask: 💾 Trade recorded in logs/trades.csv (Total processing: 1.491 seconds)
+2025-12-07 19:25:07,711 [INFO] trading_bot_flask: ============================================================
+2025-12-07 19:25:07,717 [INFO] werkzeug: 127.0.0.1 - - [07/Dec/2025 19:25:07] "POST /webhook HTTP/1.1" 200 -
+2025-12-07 19:27:50,939 [INFO] trading_bot_flask: ============================================================
+2025-12-07 19:27:50,940 [INFO] trading_bot_flask: 📥 WEBHOOK RECEIVED from 127.0.0.1
+2025-12-07 19:27:50,940 [INFO] trading_bot_flask: 📦 Payload: {'signal': 'buy', 'symbol': 'BTCUSDT', 'exchange': 'BINANCE', 'time': '2025-12-04 12:00:00', 'auth_token': 'super_secret_alert_token'}
+2025-12-07 19:27:50,940 [INFO] trading_bot_flask: 📊 Processing BUY order: 0.001 BTCUSDT
+2025-12-07 19:27:52,560 [INFO] app.exchange.binance_client: Synced time offset: 652 ms (server ahead by 652 ms)
+2025-12-07 19:27:52,561 [INFO] trading_bot_flask: ✅ Binance client initialized
+2025-12-07 19:27:52,562 [INFO] app.exchange.binance_client: 📤 Placing BUY market order: 0.001 BTCUSDT
+2025-12-07 19:27:52,787 [INFO] app.exchange.binance_client: Synced time offset: 651 ms (server ahead by 651 ms)
+2025-12-07 19:27:53,020 [INFO] app.exchange.binance_client: ✅ Order executed successfully in 0.233 seconds
+2025-12-07 19:27:53,022 [INFO] trading_bot_flask: ✅ ORDER EXECUTED successfully!
+2025-12-07 19:27:53,022 [INFO] trading_bot_flask:    Order ID: 8014909
+2025-12-07 19:27:53,023 [INFO] trading_bot_flask:    Side: BUY
+2025-12-07 19:27:53,024 [INFO] trading_bot_flask:    Symbol: BTCUSDT
+2025-12-07 19:27:53,025 [INFO] trading_bot_flask:    Executed Qty: 0.001
+2025-12-07 19:27:53,026 [INFO] trading_bot_flask:    Avg Price: $88224.48
+2025-12-07 19:27:53,027 [INFO] trading_bot_flask:    Execution Time: 0.460 seconds
+2025-12-07 19:27:53,029 [INFO] trading_bot_flask: 💾 Trade recorded in logs/trades.csv (Total processing: 2.090 seconds)
+2025-12-07 19:27:53,030 [INFO] trading_bot_flask: ============================================================
+2025-12-07 19:27:53,036 [INFO] werkzeug: 127.0.0.1 - - [07/Dec/2025 19:27:53] "POST /webhook HTTP/1.1" 200 -
+2025-12-07 19:27:53,069 [INFO] trading_bot_flask: ============================================================
+2025-12-07 19:27:53,069 [INFO] trading_bot_flask: 📥 WEBHOOK RECEIVED from 127.0.0.1
+2025-12-07 19:27:53,070 [INFO] trading_bot_flask: 📦 Payload: {'signal': 'sell', 'symbol': 'BTCUSDT', 'exchange': 'BINANCE', 'time': '2025-12-04 12:00:00', 'auth_token': 'super_secret_alert_token'}
+2025-12-07 19:27:53,071 [INFO] trading_bot_flask: 📊 Processing SELL order: 0.001 BTCUSDT
+2025-12-07 19:27:54,062 [INFO] app.exchange.binance_client: Synced time offset: 652 ms (server ahead by 652 ms)
+2025-12-07 19:27:54,063 [INFO] trading_bot_flask: ✅ Binance client initialized
+2025-12-07 19:27:54,063 [INFO] app.exchange.binance_client: 📤 Placing SELL market order: 0.001 BTCUSDT
+2025-12-07 19:27:54,289 [INFO] app.exchange.binance_client: Synced time offset: 652 ms (server ahead by 652 ms)
+2025-12-07 19:27:54,517 [INFO] app.exchange.binance_client: ✅ Order executed successfully in 0.228 seconds
+2025-12-07 19:27:54,519 [INFO] trading_bot_flask: ✅ ORDER EXECUTED successfully!
+2025-12-07 19:27:54,520 [INFO] trading_bot_flask:    Order ID: 8014911
+2025-12-07 19:27:54,521 [INFO] trading_bot_flask:    Side: SELL
+2025-12-07 19:27:54,521 [INFO] trading_bot_flask:    Symbol: BTCUSDT
+2025-12-07 19:27:54,522 [INFO] trading_bot_flask:    Executed Qty: 0.001
+2025-12-07 19:27:54,523 [INFO] trading_bot_flask:    Avg Price: $88224.47
+2025-12-07 19:27:54,524 [INFO] trading_bot_flask:    Execution Time: 0.456 seconds
+2025-12-07 19:27:54,526 [INFO] trading_bot_flask: 💾 Trade recorded in logs/trades.csv (Total processing: 1.458 seconds)
+2025-12-07 19:27:54,528 [INFO] trading_bot_flask: ============================================================
+2025-12-07 19:27:54,533 [INFO] werkzeug: 127.0.0.1 - - [07/Dec/2025 19:27:54] "POST /webhook HTTP/1.1" 200 -
+2025-12-07 19:27:59,302 [INFO] trading_bot_flask: ============================================================
+2025-12-07 19:27:59,303 [INFO] trading_bot_flask: 📥 WEBHOOK RECEIVED from 127.0.0.1
+2025-12-07 19:27:59,303 [INFO] trading_bot_flask: 📦 Payload: {'signal': 'buy', 'symbol': 'BTCUSDT', 'exchange': 'BINANCE', 'time': '2025-12-04 12:00:00', 'auth_token': 'super_secret_alert_token'}
+2025-12-07 19:27:59,303 [INFO] trading_bot_flask: 📊 Processing BUY order: 0.001 BTCUSDT
+2025-12-07 19:28:00,269 [INFO] app.exchange.binance_client: Synced time offset: 655 ms (server ahead by 655 ms)
+2025-12-07 19:28:00,269 [INFO] trading_bot_flask: ✅ Binance client initialized
+2025-12-07 19:28:00,269 [INFO] app.exchange.binance_client: 📤 Placing BUY market order: 0.001 BTCUSDT
+2025-12-07 19:28:00,494 [INFO] app.exchange.binance_client: Synced time offset: 652 ms (server ahead by 652 ms)
+2025-12-07 19:28:00,717 [INFO] app.exchange.binance_client: ✅ Order executed successfully in 0.222 seconds
+2025-12-07 19:28:00,719 [INFO] trading_bot_flask: ✅ ORDER EXECUTED successfully!
+2025-12-07 19:28:00,720 [INFO] trading_bot_flask:    Order ID: 8014989
+2025-12-07 19:28:00,721 [INFO] trading_bot_flask:    Side: BUY
+2025-12-07 19:28:00,722 [INFO] trading_bot_flask:    Symbol: BTCUSDT
+2025-12-07 19:28:00,723 [INFO] trading_bot_flask:    Executed Qty: 0.001
+2025-12-07 19:28:00,724 [INFO] trading_bot_flask:    Avg Price: $88166.58
+2025-12-07 19:28:00,725 [INFO] trading_bot_flask:    Execution Time: 0.449 seconds
+2025-12-07 19:28:00,728 [INFO] trading_bot_flask: 💾 Trade recorded in logs/trades.csv (Total processing: 1.426 seconds)
+2025-12-07 19:28:00,730 [INFO] trading_bot_flask: ============================================================
+2025-12-07 19:28:00,735 [INFO] werkzeug: 127.0.0.1 - - [07/Dec/2025 19:28:00] "POST /webhook HTTP/1.1" 200 -
+2025-12-07 19:28:00,748 [INFO] trading_bot_flask: ============================================================
+2025-12-07 19:28:00,749 [INFO] trading_bot_flask: 📥 WEBHOOK RECEIVED from 127.0.0.1
+2025-12-07 19:28:00,749 [INFO] trading_bot_flask: 📦 Payload: {'signal': 'sell', 'symbol': 'BTCUSDT', 'exchange': 'BINANCE', 'time': '2025-12-04 12:00:00', 'auth_token': 'super_secret_alert_token'}
+2025-12-07 19:28:00,749 [INFO] trading_bot_flask: 📊 Processing SELL order: 0.001 BTCUSDT
+2025-12-07 19:28:01,717 [INFO] app.exchange.binance_client: Synced time offset: 656 ms (server ahead by 656 ms)
+2025-12-07 19:28:01,717 [INFO] trading_bot_flask: ✅ Binance client initialized
+2025-12-07 19:28:01,718 [INFO] app.exchange.binance_client: 📤 Placing SELL market order: 0.001 BTCUSDT
+2025-12-07 19:28:01,946 [INFO] app.exchange.binance_client: Synced time offset: 653 ms (server ahead by 653 ms)
+2025-12-07 19:28:02,173 [INFO] app.exchange.binance_client: ✅ Order executed successfully in 0.226 seconds
+2025-12-07 19:28:02,174 [INFO] trading_bot_flask: ✅ ORDER EXECUTED successfully!
+2025-12-07 19:28:02,174 [INFO] trading_bot_flask:    Order ID: 8014992
+2025-12-07 19:28:02,175 [INFO] trading_bot_flask:    Side: SELL
+2025-12-07 19:28:02,175 [INFO] trading_bot_flask:    Symbol: BTCUSDT
+2025-12-07 19:28:02,176 [INFO] trading_bot_flask:    Executed Qty: 0.001
+2025-12-07 19:28:02,176 [INFO] trading_bot_flask:    Avg Price: $88166.57
+2025-12-07 19:28:02,177 [INFO] trading_bot_flask:    Execution Time: 0.456 seconds
+2025-12-07 19:28:02,178 [INFO] trading_bot_flask: 💾 Trade recorded in logs/trades.csv (Total processing: 1.430 seconds)
+2025-12-07 19:28:02,179 [INFO] trading_bot_flask: ============================================================
+2025-12-07 19:28:02,183 [INFO] werkzeug: 127.0.0.1 - - [07/Dec/2025 19:28:02] "POST /webhook HTTP/1.1" 200 -
+2025-12-09 19:43:57,137 [INFO] trading_bot_flask: ============================================================
+2025-12-09 19:43:57,139 [INFO] trading_bot_flask: 🚀 Starting Trading Bot Webhook Server
+2025-12-09 19:43:57,140 [INFO] trading_bot_flask: ============================================================
+2025-12-09 19:43:57,140 [INFO] trading_bot_flask: 📡 Server: http://127.0.0.1:8001
+2025-12-09 19:43:57,141 [INFO] trading_bot_flask: 🔗 Webhook: http://127.0.0.1:8001/webhook
+2025-12-09 19:43:57,141 [INFO] trading_bot_flask: 📊 Metrics: http://127.0.0.1:8001/metrics
+2025-12-09 19:43:57,141 [INFO] trading_bot_flask: 📈 Stats: http://127.0.0.1:8001/stats
+2025-12-09 19:43:57,142 [INFO] trading_bot_flask: ============================================================
+2025-12-09 19:43:57,163 [INFO] trading_bot_flask: 
+
+╔══════════════════════════════════════════════════════════╗
+║              TRADING BOT PERFORMANCE METRICS             ║
+╠══════════════════════════════════════════════════════════╣
+║ Total Trades:            14                              ║
+║ Successful:              10                              ║
+║ Failed:                   4                              ║
+║ Success Rate:         71.4%                            ║
+╠══════════════════════════════════════════════════════════╣
+║ Buy Orders:               5                              ║
+║ Sell Orders:              5                              ║
+║ Total Volume:        0.01000000 BTC                      ║
+╚══════════════════════════════════════════════════════════╝
+
+2025-12-09 19:43:57,687 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8001
+2025-12-09 19:43:57,689 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2025-12-09 19:43:57,695 [INFO] werkzeug:  * Restarting with stat
+2025-12-09 19:43:59,139 [INFO] trading_bot_flask: ============================================================
+2025-12-09 19:43:59,140 [INFO] trading_bot_flask: 🚀 Starting Trading Bot Webhook Server
+2025-12-09 19:43:59,140 [INFO] trading_bot_flask: ============================================================
+2025-12-09 19:43:59,141 [INFO] trading_bot_flask: 📡 Server: http://127.0.0.1:8001
+2025-12-09 19:43:59,141 [INFO] trading_bot_flask: 🔗 Webhook: http://127.0.0.1:8001/webhook
+2025-12-09 19:43:59,141 [INFO] trading_bot_flask: 📊 Metrics: http://127.0.0.1:8001/metrics
+2025-12-09 19:43:59,142 [INFO] trading_bot_flask: 📈 Stats: http://127.0.0.1:8001/stats
+2025-12-09 19:43:59,142 [INFO] trading_bot_flask: ============================================================
+2025-12-09 19:43:59,143 [INFO] trading_bot_flask: 
+
+╔══════════════════════════════════════════════════════════╗
+║              TRADING BOT PERFORMANCE METRICS             ║
+╠══════════════════════════════════════════════════════════╣
+║ Total Trades:            14                              ║
+║ Successful:              10                              ║
+║ Failed:                   4                              ║
+║ Success Rate:         71.4%                            ║
+╠══════════════════════════════════════════════════════════╣
+║ Buy Orders:               5                              ║
+║ Sell Orders:              5                              ║
+║ Total Volume:        0.01000000 BTC                      ║
+╚══════════════════════════════════════════════════════════╝
+
+2025-12-09 19:43:59,219 [WARNING] werkzeug:  * Debugger is active!
+2025-12-09 19:43:59,232 [INFO] werkzeug:  * Debugger PIN: 373-469-883
+2025-12-09 19:44:17,860 [INFO] trading_bot_flask: ============================================================
+2025-12-09 19:44:17,860 [INFO] trading_bot_flask: 📥 WEBHOOK RECEIVED from 127.0.0.1
+2025-12-09 19:44:17,861 [INFO] trading_bot_flask: 📦 Payload: {'signal': 'buy', 'symbol': 'BTCUSDT', 'exchange': 'BINANCE', 'time': '2025-12-04 12:00:00', 'auth_token': 'super_secret_alert_token'}
+2025-12-09 19:44:17,861 [INFO] trading_bot_flask: 📊 Processing BUY order: 0.001 BTCUSDT
+2025-12-09 19:44:19,382 [INFO] app.exchange.binance_client: Synced time offset: 542 ms (server ahead by 542 ms)
+2025-12-09 19:44:19,383 [INFO] trading_bot_flask: ✅ Binance client initialized
+2025-12-09 19:44:19,384 [INFO] app.exchange.binance_client: 📤 Placing BUY market order: 0.001 BTCUSDT
+2025-12-09 19:44:19,690 [INFO] app.exchange.binance_client: Synced time offset: 628 ms (server ahead by 628 ms)
+2025-12-09 19:44:19,919 [INFO] app.exchange.binance_client: ✅ Order executed successfully in 0.228 seconds
+2025-12-09 19:44:19,921 [INFO] trading_bot_flask: ✅ ORDER EXECUTED successfully!
+2025-12-09 19:44:19,932 [INFO] trading_bot_flask:    Order ID: 9146497
+2025-12-09 19:44:19,934 [INFO] trading_bot_flask:    Side: BUY
+2025-12-09 19:44:19,935 [INFO] trading_bot_flask:    Symbol: BTCUSDT
+2025-12-09 19:44:19,936 [INFO] trading_bot_flask:    Executed Qty: 0.001
+2025-12-09 19:44:19,936 [INFO] trading_bot_flask:    Avg Price: $90162.76
+2025-12-09 19:44:19,938 [INFO] trading_bot_flask:    Execution Time: 0.537 seconds
+2025-12-09 19:44:19,947 [INFO] trading_bot_flask: 💾 Trade recorded in logs/trades.csv (Total processing: 2.087 seconds)
+2025-12-09 19:44:19,951 [INFO] trading_bot_flask: ============================================================
+2025-12-09 19:44:19,959 [INFO] werkzeug: 127.0.0.1 - - [09/Dec/2025 19:44:19] "POST /webhook HTTP/1.1" 200 -
+2025-12-09 19:44:20,095 [INFO] trading_bot_flask: ============================================================
+2025-12-09 19:44:20,096 [INFO] trading_bot_flask: 📥 WEBHOOK RECEIVED from 127.0.0.1
+2025-12-09 19:44:20,096 [INFO] trading_bot_flask: 📦 Payload: {'signal': 'sell', 'symbol': 'BTCUSDT', 'exchange': 'BINANCE', 'time': '2025-12-04 12:00:00', 'auth_token': 'super_secret_alert_token'}
+2025-12-09 19:44:20,097 [INFO] trading_bot_flask: 📊 Processing SELL order: 0.001 BTCUSDT
+2025-12-09 19:44:21,430 [INFO] app.exchange.binance_client: Synced time offset: 633 ms (server ahead by 633 ms)
+2025-12-09 19:44:21,460 [INFO] trading_bot_flask: ✅ Binance client initialized
+2025-12-09 19:44:21,536 [INFO] app.exchange.binance_client: 📤 Placing SELL market order: 0.001 BTCUSDT
+2025-12-09 19:44:21,943 [INFO] app.exchange.binance_client: Synced time offset: 630 ms (server ahead by 630 ms)
+2025-12-09 19:44:22,180 [INFO] app.exchange.binance_client: ✅ Order executed successfully in 0.235 seconds
+2025-12-09 19:44:22,182 [INFO] trading_bot_flask: ✅ ORDER EXECUTED successfully!
+2025-12-09 19:44:22,183 [INFO] trading_bot_flask:    Order ID: 9146500
+2025-12-09 19:44:22,184 [INFO] trading_bot_flask:    Side: SELL
+2025-12-09 19:44:22,185 [INFO] trading_bot_flask:    Symbol: BTCUSDT
+2025-12-09 19:44:22,186 [INFO] trading_bot_flask:    Executed Qty: 0.001
+2025-12-09 19:44:22,187 [INFO] trading_bot_flask:    Avg Price: $90162.75
+2025-12-09 19:44:22,189 [INFO] trading_bot_flask:    Execution Time: 0.646 seconds
+2025-12-09 19:44:22,194 [INFO] trading_bot_flask: 💾 Trade recorded in logs/trades.csv (Total processing: 2.099 seconds)
+2025-12-09 19:44:22,196 [INFO] trading_bot_flask: ============================================================
+2025-12-09 19:44:22,206 [INFO] werkzeug: 127.0.0.1 - - [09/Dec/2025 19:44:22] "POST /webhook HTTP/1.1" 200 -
+2025-12-10 16:33:15,931 [INFO] trading_bot_flask: ============================================================
+2025-12-10 16:33:15,932 [INFO] trading_bot_flask: 🚀 Starting Trading Bot Webhook Server
+2025-12-10 16:33:15,940 [INFO] trading_bot_flask: ============================================================
+2025-12-10 16:33:15,941 [INFO] trading_bot_flask: 📡 Server: http://127.0.0.1:8001
+2025-12-10 16:33:15,941 [INFO] trading_bot_flask: 🔗 Webhook: http://127.0.0.1:8001/webhook
+2025-12-10 16:33:15,942 [INFO] trading_bot_flask: 📊 Metrics: http://127.0.0.1:8001/metrics
+2025-12-10 16:33:15,943 [INFO] trading_bot_flask: 📈 Stats: http://127.0.0.1:8001/stats
+2025-12-10 16:33:15,943 [INFO] trading_bot_flask: ============================================================
+2025-12-10 16:33:15,964 [INFO] trading_bot_flask: 
+
+╔══════════════════════════════════════════════════════════╗
+║              TRADING BOT PERFORMANCE METRICS             ║
+╠══════════════════════════════════════════════════════════╣
+║ Total Trades:            16                              ║
+║ Successful:              12                              ║
+║ Failed:                   4                              ║
+║ Success Rate:         75.0%                            ║
+╠══════════════════════════════════════════════════════════╣
+║ Buy Orders:               6                              ║
+║ Sell Orders:              6                              ║
+║ Total Volume:        0.01200000 BTC                      ║
+╚══════════════════════════════════════════════════════════╝
+
+2025-12-10 16:33:16,533 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8001
+2025-12-10 16:33:16,543 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2025-12-10 16:33:16,548 [INFO] werkzeug:  * Restarting with stat
+2025-12-10 16:33:23,621 [INFO] trading_bot_flask: ============================================================
+2025-12-10 16:33:23,625 [INFO] trading_bot_flask: 🚀 Starting Trading Bot Webhook Server
+2025-12-10 16:33:23,627 [INFO] trading_bot_flask: ============================================================
+2025-12-10 16:33:23,632 [INFO] trading_bot_flask: 📡 Server: http://127.0.0.1:8001
+2025-12-10 16:33:23,637 [INFO] trading_bot_flask: 🔗 Webhook: http://127.0.0.1:8001/webhook
+2025-12-10 16:33:23,639 [INFO] trading_bot_flask: 📊 Metrics: http://127.0.0.1:8001/metrics
+2025-12-10 16:33:23,639 [INFO] trading_bot_flask: 📈 Stats: http://127.0.0.1:8001/stats
+2025-12-10 16:33:23,644 [INFO] trading_bot_flask: ============================================================
+2025-12-10 16:33:23,649 [INFO] trading_bot_flask: 
+
+╔══════════════════════════════════════════════════════════╗
+║              TRADING BOT PERFORMANCE METRICS             ║
+╠══════════════════════════════════════════════════════════╣
+║ Total Trades:            16                              ║
+║ Successful:              12                              ║
+║ Failed:                   4                              ║
+║ Success Rate:         75.0%                            ║
+╠══════════════════════════════════════════════════════════╣
+║ Buy Orders:               6                              ║
+║ Sell Orders:              6                              ║
+║ Total Volume:        0.01200000 BTC                      ║
+╚══════════════════════════════════════════════════════════╝
+
+2025-12-10 16:33:24,057 [WARNING] werkzeug:  * Debugger is active!
+2025-12-10 16:33:24,331 [INFO] werkzeug:  * Debugger PIN: 373-469-883
+2025-12-10 16:34:06,629 [INFO] trading_bot_flask: ============================================================
+2025-12-10 16:34:06,630 [INFO] trading_bot_flask: 📥 WEBHOOK RECEIVED from 127.0.0.1
+2025-12-10 16:34:06,630 [INFO] trading_bot_flask: 📦 Payload: {'signal': 'buy', 'symbol': 'BTCUSDT', 'exchange': 'BINANCE', 'time': '2025-12-04 12:00:00', 'auth_token': 'super_secret_alert_token'}
+2025-12-10 16:34:06,631 [INFO] trading_bot_flask: 📊 Processing BUY order: 0.001 BTCUSDT
+2025-12-10 16:34:08,550 [INFO] app.exchange.binance_client: Synced time offset: 431 ms (server ahead by 431 ms)
+2025-12-10 16:34:08,551 [INFO] trading_bot_flask: ✅ Binance client initialized
+2025-12-10 16:34:08,552 [INFO] app.exchange.binance_client: 📤 Placing BUY market order: 0.001 BTCUSDT
+2025-12-10 16:34:08,858 [INFO] app.exchange.binance_client: Synced time offset: 367 ms (server ahead by 367 ms)
+2025-12-10 16:34:09,166 [INFO] app.exchange.binance_client: ✅ Order executed successfully in 0.307 seconds
+2025-12-10 16:34:09,168 [INFO] trading_bot_flask: ✅ ORDER EXECUTED successfully!
+2025-12-10 16:34:09,169 [INFO] trading_bot_flask:    Order ID: 9640713
+2025-12-10 16:34:09,170 [INFO] trading_bot_flask:    Side: BUY
+2025-12-10 16:34:09,171 [INFO] trading_bot_flask:    Symbol: BTCUSDT
+2025-12-10 16:34:09,172 [INFO] trading_bot_flask:    Executed Qty: 0.001
+2025-12-10 16:34:09,173 [INFO] trading_bot_flask:    Avg Price: $92324.86
+2025-12-10 16:34:09,174 [INFO] trading_bot_flask:    Execution Time: 0.616 seconds
+2025-12-10 16:34:09,176 [INFO] trading_bot_flask: 💾 Trade recorded in logs/trades.csv (Total processing: 2.548 seconds)
+2025-12-10 16:34:09,178 [INFO] trading_bot_flask: ============================================================
+2025-12-10 16:34:09,191 [INFO] werkzeug: 127.0.0.1 - - [10/Dec/2025 16:34:09] "POST /webhook HTTP/1.1" 200 -
+2025-12-10 16:34:09,213 [INFO] trading_bot_flask: ============================================================
+2025-12-10 16:34:09,216 [INFO] trading_bot_flask: 📥 WEBHOOK RECEIVED from 127.0.0.1
+2025-12-10 16:34:09,217 [INFO] trading_bot_flask: 📦 Payload: {'signal': 'sell', 'symbol': 'BTCUSDT', 'exchange': 'BINANCE', 'time': '2025-12-04 12:00:00', 'auth_token': 'super_secret_alert_token'}
+2025-12-10 16:34:09,218 [INFO] trading_bot_flask: 📊 Processing SELL order: 0.001 BTCUSDT
+2025-12-10 16:34:11,444 [INFO] app.exchange.binance_client: Synced time offset: 445 ms (server ahead by 445 ms)
+2025-12-10 16:34:11,446 [INFO] trading_bot_flask: ✅ Binance client initialized
+2025-12-10 16:34:11,447 [INFO] app.exchange.binance_client: 📤 Placing SELL market order: 0.001 BTCUSDT
+2025-12-10 16:34:11,680 [INFO] app.exchange.binance_client: Synced time offset: 444 ms (server ahead by 444 ms)
+2025-12-10 16:34:12,339 [INFO] app.exchange.binance_client: ✅ Order executed successfully in 0.658 seconds
+2025-12-10 16:34:12,340 [INFO] trading_bot_flask: ✅ ORDER EXECUTED successfully!
+2025-12-10 16:34:12,341 [INFO] trading_bot_flask:    Order ID: 9640714
+2025-12-10 16:34:12,342 [INFO] trading_bot_flask:    Side: SELL
+2025-12-10 16:34:12,345 [INFO] trading_bot_flask:    Symbol: BTCUSDT
+2025-12-10 16:34:12,350 [INFO] trading_bot_flask:    Executed Qty: 0.001
+2025-12-10 16:34:12,352 [INFO] trading_bot_flask:    Avg Price: $92324.85
+2025-12-10 16:34:12,354 [INFO] trading_bot_flask:    Execution Time: 0.893 seconds
+2025-12-10 16:34:12,358 [INFO] trading_bot_flask: 💾 Trade recorded in logs/trades.csv (Total processing: 3.145 seconds)
+2025-12-10 16:34:12,367 [INFO] trading_bot_flask: ============================================================
+2025-12-10 16:34:12,381 [INFO] werkzeug: 127.0.0.1 - - [10/Dec/2025 16:34:12] "POST /webhook HTTP/1.1" 200 -
+2025-12-10 16:34:50,948 [INFO] werkzeug: 127.0.0.1 - - [10/Dec/2025 16:34:50] "GET / HTTP/1.1" 200 -
+2025-12-10 16:34:51,328 [INFO] werkzeug: 127.0.0.1 - - [10/Dec/2025 16:34:51] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
